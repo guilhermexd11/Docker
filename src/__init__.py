@@ -1,4 +1,4 @@
-from .config import DBConnectionfrom 
+from .config import DBConnection
 from .entities import Users as UsersModel
 
 class UserRepo:

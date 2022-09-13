@@ -6,7 +6,7 @@ class DBConnection:
     def __init__(self) -> None:
         self.__connection_string = 'mysql+pymysql://root:lhama@mysqldb/teste'
         self.session = None
-
+    
     def __enter__(self):
         engine = create_engine(self.__connection_string)
         session_maker = sessionmaker()
